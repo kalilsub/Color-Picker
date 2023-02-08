@@ -1,0 +1,59 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <title>Color Picker</title>
+</head>
+<body>
+    <main>
+        <form id="color-form">
+            <input type="color" id="color-picker"/>
+            <select name="schemes" id="schemes">
+                <!-- <option value="">Select a Scheme...</option> -->
+                <option value="monochrome">Monochrom</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button>Get Color Scheme</button>
+        </form>
+        <!-- Colors rendered here -->
+        <div id="color-container">
+            <div class="palette">
+                <div class="placeholder" style="background-color: #F55A5A"></div>
+                <div class="color-info"></div>
+            </div>
+            <div class="palette">
+                <div class="placeholder" style="background-color: #FBF3AB"></div>
+                <div class="color-info"></div>
+            </div>
+            <div class="palette">
+                <div class="placeholder" style="background-color: #2B283A"></div>
+                <div class="color-info"></div>
+            </div>
+            <div class="palette">
+                <div class="placeholder" style="background-color: #AAD1B6"></div>
+                <div class="color-info"></div>
+            </div>
+            <div class="palette">
+                <div class="placeholder" style="background-color: #A626D3"></div>
+                <div class="color-info"></div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,151 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    /* min-width: 430px; */
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 650px;
+    min-height: 50vh;
+    margin: 30px auto;
+    border: 2px solid black;
+    padding-bottom: 40px;
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.15);
+    padding: 1em;
+
+}
+
+form {
+    margin-bottom: 0;
+    padding: 1.25em;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.15);
+
+}
+
+main,
+#schemes,
+form button {
+    border-radius: 5px;
+}
+
+#color-picker {
+    width: 60px;
+    height: 50px;
+}
+
+#schemes {
+    width: 300px;
+    height: 40px;
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+/* option {} */
+
+form button {
+    font-family: 'Inter', sans-serif;
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+
+form button:active,
+form button:hover{
+    background-color: #404040;
+    color: #fff;
+    transform: none;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#color-container { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75%;
+
+}
+
+.palette {
+    margin: auto;
+    width: 100%;
+
+}
+
+.palette:hover {
+    cursor:grab;
+    transform: scale(1.01);
+}
+
+.palette:active {
+    transform: translateY(2px);
+}
+
+
+.placeholder {
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    /* border: 1px solid black; */
+    
+}
+
+.color-info {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding: 0;
+}
+
+.color-text {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-shadow: 1px 1px 0 #333,
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        2px 2px 5px rgba(0,0,0,0.65);
+}
+
+/* styling input color  */
+
+#color-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #color-picker::-webkit-color-swatch {
+    border-radius: 15px;
+    border: none;
+  }
+  #color-picker::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+  }
